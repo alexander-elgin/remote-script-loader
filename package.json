@@ -1,6 +1,6 @@
 {
   "name": "remote-script-loader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Promise-based loader of remote scripts",
   "keywords": [
     "loader",
@@ -11,6 +11,7 @@
     "type": "git",
     "url": "git://github.com/alexander-elgin/remote-script-loader.git"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "main": "src/index.js",
   "engines": {
     "npm": ">=3",
