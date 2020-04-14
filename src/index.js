@@ -12,7 +12,7 @@ const loadScript = function (url) {
 };
 
 const loadScriptOnce = function (url, varName) {
-    window[varName] === undefined ? loadScript(url) : Promise.resolve(); // eslint-disable-line
+    return window[varName] === undefined ? loadScript(url) : Promise.resolve(); // eslint-disable-line
 };
 
 module.exports = { loadScript: loadScript, loadScriptOnce: loadScriptOnce };
